@@ -15,14 +15,32 @@ function verCategorias (){
                                  
              $nome = $row['cat_nome'];
              $id = $row['cat_id'];
-              echo "<tr><td>$id</td><td>$nome</td></tr>";
+              echo "<tr>";
+              echo "<td>$id</td>";
+              echo "<td>$nome</td>";
+              echo "<td><a href='categorias.php?delete={$id}'>APAGAR</a></td>";
+              echo "</tr>";
         }
-}
+        ?>
 
-?>
+    <?php 
+        if (isset($_GET['delete'])){
+            $query = "delete from categorias where cat_id = '$id'";
+            $resultadoDelete = mysqli_query($connection, $query);
+
+            if ($resultadoDelete){
+                echo "Categoria deletada com sucesso";
+            }
+        }
+        }
+        ?>
+
+
+
+
+
 
     <div id="wrapper">
-
 
 <?php 
     if(isset($_POST['cadastrar'])){
@@ -46,7 +64,7 @@ function verCategorias (){
     }
 ?>
 
-    
+
 
         <?php include "includes/navigation.php" ?>
 
