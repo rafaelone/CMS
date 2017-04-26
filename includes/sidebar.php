@@ -18,25 +18,32 @@
     <div class="well">
         <h4>Categorias</h4>
         <div class="row">
-            <!-- /.col-lg-6 -->
             <div class="col-lg-12">
                 <ul class="list-unstyled">
-                     <?php
 
-            $query =  "SELECT * FROM categorias";
-            $select_todas_categorias = mysqli_query($connection, $query);
+                  <?php
 
-            while($row = mysqli_fetch_assoc($select_todas_categorias)){
-              $cat_nome = $row['cat_nome'];
+                  $query = "SELECT * from categorias";
+                  $select_todas_categorias = mysqli_query($connection, $query);
 
-              echo "<li><a href='#'>" . $cat_nome . "</a></li>";
-            }
+              while($row = mysqli_fetch_assoc($select_todas_categorias)){
+                  $cat_nome = $row['cat_nome'];
 
-               ?>
-
+                  echo '<li><a href="#">'. $cat_nome . '</a></li>';
+              }
+                   ?>
+                    <!--
+                    <li><a href="#">Category Name</a>
+                    </li>
+                    <li><a href="#">Category Name</a>
+                    </li>
+                    <li><a href="#">Category Name</a>
+                    </li>
+                    <li><a href="#">Category Name</a>
+                    </li> -->
                 </ul>
             </div>
-            <!-- /.col-lg-6 -->
+
         </div>
         <!-- /.row -->
     </div>

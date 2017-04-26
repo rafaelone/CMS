@@ -1,8 +1,9 @@
-<?php include "includes/header.php" ?>
+<?php include "includes/header.php"; ?>
 
     <div id="wrapper">
 
-        <?php include "includes/navigation.php" ?>
+        <!-- Navigation -->
+      <?php include "includes/navigation.php"; ?>
 
         <div id="page-wrapper">
 
@@ -12,10 +13,10 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Blank Page
-                            <small>Subheading</small>
+                            Bem vindo
+                            <small>Rafael</small>
                         </h1>
-                        
+
                     </div>
                 </div>
                 <!-- /.row -->
@@ -25,4 +26,5 @@
 
         </div>
         <!-- /#page-wrapper -->
-<?php include "includes/footer.php" ?>
+
+  <?php include "includes/header.php"; ?>
