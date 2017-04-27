@@ -45,7 +45,7 @@
                         <a href="#">Adicionar novo post</a>
                     </li>
                     <li>
-                        <a href="#">Ver todos os posts</a>
+                        <a href="./posts.php">Ver todos os posts</a>
                     </li>
                 </ul>
             </li>
@@ -67,7 +67,7 @@
                 <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Comentários</a>
             </li>
             <li>
-                <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Categorias</a>
+                <a href="../admin/categorias.php"><i class="fa fa-fw fa-wrench"></i> Categorias</a>
             </li>
 
 

@@ -14,7 +14,7 @@
                     <div class="col-lg-12">
                         <h1 class="page-header">
                             Bem vindo
-                            <small>Rafael</small>
+                            <small>Gustavo</small>
                         </h1>
 
                     </div>
