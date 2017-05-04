@@ -42,10 +42,10 @@
                   </i></a>
                 <ul id="posts_dropdown" class="collapse">
                     <li>
-                        <a href="#">Adicionar novo post</a>
+                        <a href="add_post.php">Adicionar novo post</a>
                     </li>
                     <li>
-                        <a href="./posts.php">Ver todos os posts</a>
+                        <a href="posts.php">Ver todos os posts</a>
                     </li>
                 </ul>
             </li>

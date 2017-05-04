@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 12-Abr-2017 às 14:15
+-- Generation Time: 05-Abr-2017 às 14:31
 -- Versão do servidor: 10.1.19-MariaDB
 -- PHP Version: 7.0.13
 
@@ -36,14 +36,10 @@ CREATE TABLE `categorias` (
 --
 
 INSERT INTO `categorias` (`cat_id`, `cat_nome`) VALUES
-(1, 'FIAP'),
-(2, 'PHP'),
+(1, 'PHP'),
+(2, 'Mobile'),
 (3, 'Marketing'),
-(4, 'Empreendedorismo'),
-(5, 'Array'),
-(6, 'Array'),
-(7, 'Array'),
-
+(4, 'Empreendedorismo');
 
 -- --------------------------------------------------------
 
@@ -68,7 +64,7 @@ CREATE TABLE `posts` (
 --
 
 INSERT INTO `posts` (`post_id`, `post_cat_id`, `post_nome`, `post_autor`, `post_data`, `post_conteudo`, `post_imagem`, `post_tags`, `post_status`) VALUES
-(1, 1, 'Eu amo a aula de PHP', 'Rafael Sergio', '2017-04-05', 'Real oficial, eu amo a aula de php', 'cms_post_image1.jpg', 'fiap, php, aula', 'rascunho');
+(1, 1, 'Eu AMO a Aula de PHP', 'Gustavo Torrente', '2017-04-05', 'Real oficial, eu amo a aula de PHP!!!!', 'cms_post_image1.jpg', 'fiap, php, aula', 'rascunho');
 
 --
 -- Indexes for dumped tables
@@ -94,7 +90,7 @@ ALTER TABLE `posts`
 -- AUTO_INCREMENT for table `categorias`
 --
 ALTER TABLE `categorias`
-  MODIFY `cat_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+  MODIFY `cat_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `posts`
 --
