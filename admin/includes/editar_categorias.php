@@ -31,7 +31,7 @@
       $editaCategoria = mysqli_query($connection, $query);
 
       if(!$editaCategoria){
-        die("deu merda" . mysqli_error($connection));
+        die("deu ruim" . mysqli_error($connection));
       }
 
     }

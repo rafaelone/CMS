@@ -1,8 +1,6 @@
-<?php ob_start();  ?>
+
 <?php include "includes/header.php"; ?>
-<?php include "../includes/functions.php"; ?>
-
-
+<?php ob_start(); ?>
     <div id="wrapper">
 
         <!-- Navigation -->
@@ -17,16 +15,13 @@
                     <div class="col-lg-12">
                         <h1 class="page-header">
                             Bem vindo
-                            <small>Ricardo S. Filho </small>
+                            <small>Gustavo</small>
                         </h1>
 
                         <div class="col-sm-6">
 
                           <?php
-                            addCat();
-                           ?>
-                           <?php 
-                            updateCat()
+                                insertCategoria();
                            ?>
 
                           <form action="" method="post">
@@ -39,24 +34,22 @@
                             <input type="submit" class="btn btn-primary"
                             name="enviar" value="Adicionar">
                             </div>
-
-
                           </form>
-                          <?php include "includes/edita_cat.php" ?>
+
+
+                        <?php  // EDITA CATEGORIAS
+
+                          if(isset($_GET['edit'])){
+                            $cat_id = $_GET['edit'];
+                            include "includes/editar_categorias.php";
+                           }
+                        ?>
+
                           <!-- FECHA DIV SM 6-->
                         </div>
 
 
                         <div class="col-sm-6">
-
-                          <?php
-                            deleteCat();
-                           ?>
-
-                          <?php
-                       
-                         ?>
-
 
                             <table class="table table-bordered">
                                 <thead>
@@ -68,23 +61,18 @@
 
                                 <tbody>
 
-
-
-                                  <?php
-                           
-  verCategorias();
+                                  <?php // MOSTRA AS CATEGORIAS
+                                    mostraDadosCategoria();
                                   ?>
+
+                                  <?php // DELETA CATEGORIA
+                                      deletaPost();
+                                   ?>
 
                                 </tbody>
 
-
-
                             </table>
                         </div>
-
-
-
-
 
                     </div>
                 </div>
@@ -96,4 +84,4 @@
         </div>
         <!-- /#page-wrapper -->
 
-  <?php include "includes/header.php"; ?>
+  <?php include "includes/footer.php"; ?>
